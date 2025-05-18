@@ -1,4 +1,4 @@
-/**const request = require('supertest');
+const request = require('supertest');
 const app = require('../app');  // your Express app
 const { User } = require('../models');
 const { sequelize } = require('../models');
