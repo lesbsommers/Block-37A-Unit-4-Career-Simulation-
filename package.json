@@ -1,0 +1,63 @@
+{
+  "name": "34a.classroommanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "seed": "node server/db/seed.js",
+    "client:dev": "vite serve client",
+    "server:dev": "JWT=JWT node --watch server",
+    "server:dev:windows": "set JWT=JWT && node --watch server",
+    "build": "vite build client",
+    "server": "node server",
+    "test": "jest"
+  },
+  "author": "Fullstack Academy of Code",
+  "license": "ISC",
+  "prisma": {
+    "schema": "prisma/schema.prisma",
+    "seed": "node server/db/seed.js"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "prisma": "^6.8.2",
+    "supertest": "^7.1.1",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.14.1",
+    "pg": "^8.16.0",
+    "pg-hstore": "^2.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.0",
+    "react-router-dom": "^6.12.1",
+    "sequelize": "^6.37.7"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesbsommers/Block-37A-Unit-4-Career-Simulation-.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lesbsommers/Block-37A-Unit-4-Career-Simulation-/issues"
+  },
+  "homepage": "https://github.com/lesbsommers/Block-37A-Unit-4-Career-Simulation-#readme"
+}
